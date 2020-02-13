@@ -3,6 +3,9 @@
 #include <SFML/Graphics.hpp>
 #include "Framework/Input.h"
 #include "Framework/GameObject.h"
+#include "Mario.h"
+#include "Zombie.h"
+#include "Player.h"
 #include <string>
 #include <iostream>
 
@@ -24,4 +27,14 @@ private:
 	// Default variables for level class.
 	sf::RenderWindow* window;
 	Input* input;
+
+	Zombie jombie;
+	sf::Texture zombieTexture;
+
+	Mario shmario;
+	sf::Texture marioTexture;
+
+	Player slayer;
+	sf::Texture custom;
+
 };
